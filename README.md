@@ -27,7 +27,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- Adive Slip JSON API
+- Advice Slip JSON API
 
 
 ## Author

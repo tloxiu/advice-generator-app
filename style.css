@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { 
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+.hidden{
+    display: none;
+}
+
+body{
+    background-color: var(--Dark-Blue);
+    font-family: "Manrope";
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    padding-top: 2.5rem;
+    padding-bottom: 4.5rem;
+    width: 21.2rem;
+    background-color: var(--Dark-Grayish-Blue);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.advice-title{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: var(--Neon-Green);
+}
+
+.advice-text{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--Light-Cyan);
+    width: 90%;
+    margin: 1.4rem auto;
+}
+
+.divider-mobile{
+    margin: 0 auto;
+}
+
+.dice-icon{
+    background-color: var(--Neon-Green);
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    position: absolute;
+    right: 40.1%;
+    top: 88%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.dice-icon:hover{
+  -webkit-box-shadow:0px 0px 62px 0px rgba(45,255,196,0.9);
+  -moz-box-shadow: 0px 0px 62px 0px rgba(45,255,196,0.9);
+  box-shadow: 0px 0px 62px 0px rgba(45,255,196,0.9);
+}
+
+.dice-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1440px){
+  .card{
+    width: 33.8rem;
+  }
+  .divider-mobile{
+    display: none;
+  }
+  .hidden{
+    display: block;
+    margin: 0 auto;
+  }
+  .dice-icon{
+    right: 43.8%;
+}
+}
+
+
+

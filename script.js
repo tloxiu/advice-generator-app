@@ -11,10 +11,19 @@ getDataBtn.addEventListener("click", function(){
 
 
 function getData(){
-    fetch("https://api.adviceslip.com/advice").then(response => {
+    const randomId = Math.floor(Math.random() * 1000000);
+    const apiUrl = `https://api.adviceslip.com/advice?random=${randomId}`;
+
+    fetch(apiUrl).then(response => {
     return response.json();
 }).then(adviceData => {
+    console.log("After API Call");
+    console.log("adviceData:", adviceData);
+
     const adviceObject = adviceData.slip;
+
+    console.log("adviceObject:", adviceObject);
+
     adviceText.innerHTML = `"${adviceObject.advice}"`;
     adviceTitle.innerHTML = `Advice #${adviceObject.id}`;
 }).catch(error => {

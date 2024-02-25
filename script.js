@@ -15,14 +15,11 @@ function getData(){
     const apiUrl = `https://api.adviceslip.com/advice?random=${randomId}`;
 
     fetch(apiUrl).then(response => {
+        
     return response.json();
 }).then(adviceData => {
-    console.log("After API Call");
-    console.log("adviceData:", adviceData);
 
     const adviceObject = adviceData.slip;
-
-    console.log("adviceObject:", adviceObject);
 
     adviceText.innerHTML = `"${adviceObject.advice}"`;
     adviceTitle.innerHTML = `Advice #${adviceObject.id}`;

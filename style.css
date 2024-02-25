@@ -116,8 +116,9 @@ main{
     height: 65px;
     border-radius: 50px;
     position: absolute;
-    right: 40.1%;
-    top: 88%;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
     cursor: pointer;
     transition: .3s;
 }
@@ -146,10 +147,4 @@ main{
     display: block;
     margin: 0 auto;
   }
-  .dice-icon{
-    right: 43.8%;
 }
-}
-
-
-

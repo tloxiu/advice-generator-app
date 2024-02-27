@@ -79,7 +79,7 @@ main{
 .card{
     padding-top: 2.5rem;
     padding-bottom: 4.5rem;
-    width: 21.2rem;
+    max-width: 21.2rem;
     background-color: var(--Dark-Grayish-Blue);
     border-radius: 10px;
     text-align: center;
@@ -129,14 +129,14 @@ main{
 .dice-icon::before {
   content: url("assets/icon-dice.svg");
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 1440px){
   .card{
-    width: 33.8rem;
+    max-width: 33.8rem;
   }
   .divider{
     margin: 0 auto;

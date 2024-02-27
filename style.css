@@ -64,10 +64,6 @@ textarea:not([rows]) {
     --Dark-Blue: hsl(218, 23%, 16%);
 }
 
-.hidden{
-    display: none;
-}
-
 body{
     background-color: var(--Dark-Blue);
     font-family: "Manrope";
@@ -106,17 +102,18 @@ main{
     margin: 1.4rem auto;
 }
 
-.divider-mobile{
+.divider{
     margin: 0 auto;
+    content: url("assets/pattern-divider-mobile.svg");
 }
 
 .dice-icon{
+    border: none;
     background-color: var(--Neon-Green);
     width: 65px;
     height: 65px;
     border-radius: 50px;
     position: absolute;
-    left: 50%;
     top: 100%;
     transform: translate(-50%, -50%);
     cursor: pointer;
@@ -129,22 +126,20 @@ main{
   box-shadow: 0px 0px 62px 0px rgba(45,255,196,0.9);
 }
 
-.dice-img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.dice-icon::before {
+  content: url("assets/icon-dice.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 1440px){
   .card{
     width: 33.8rem;
   }
-  .divider-mobile{
-    display: none;
-  }
-  .hidden{
-    display: block;
+  .divider{
     margin: 0 auto;
-  }
+    content: url("assets/pattern-divider-desktop.svg");
+}
 }

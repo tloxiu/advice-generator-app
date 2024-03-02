@@ -67,6 +67,7 @@ textarea:not([rows]) {
 body{
     background-color: var(--Dark-Blue);
     font-family: "Manrope";
+    padding: 1rem;
 }
 
 main{
@@ -74,17 +75,21 @@ main{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 0 1rem;
 }
 
 .card{
     padding-top: 2.5rem;
     padding-bottom: 4.5rem;
-    max-width: 21.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 38.8rem;
     background-color: var(--Dark-Grayish-Blue);
     border-radius: 10px;
     text-align: center;
     position: relative;
 }
+
 
 .advice-title{
     font-weight: 400;
@@ -102,9 +107,8 @@ main{
     margin: 1.4rem auto;
 }
 
-.divider{
+.divider img{
     margin: 0 auto;
-    content: url("assets/pattern-divider-mobile.svg");
 }
 
 .dice-icon{
@@ -134,14 +138,3 @@ main{
   transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width: 1440px){
-  .card{
-    max-width: 33.8rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .divider{
-    margin: 0 auto;
-    content: url("assets/pattern-divider-desktop.svg");
-}
-}

@@ -28,8 +28,3 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - Advice Slip JSON API
-
-
-## Author
-
-- Frontend Mentor - [@tloxiu](https://www.frontendmentor.io/profile/tloxiu)
